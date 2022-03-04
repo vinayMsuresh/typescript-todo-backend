@@ -38,7 +38,9 @@ export default function Todo() {
   const clickAdd = () => setAdd(true)
   return (
     <>
-        <Container className='m-3'>
+    <h2 className='bg-dark text-white p-2'>Todo App</h2>
+        <Container  className='mt-4'>
+        
 
         <Modal show={isAdd} onHide={handleClose}>
         <Modal.Header closeButton>
@@ -68,8 +70,8 @@ export default function Todo() {
 
 
 
-      <Button onClick={() => clickAdd()}>Add Todo</Button>
-          <Table bordered striped className='m-4'>
+      <Button className='m-4' onClick={() => clickAdd()}>Add Todo</Button>
+          <Table variant='danger' bordered className='mt-2 ml-4'>
             <thead>
               <tr>
                 <th>ID</th>
